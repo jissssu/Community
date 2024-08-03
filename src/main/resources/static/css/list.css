@@ -1,0 +1,160 @@
+/* 전체 페이지 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+}
+
+/* 네비게이션 스타일 */
+nav {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30px;
+   
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav .logo img.logo-img {
+   
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+
+nav .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:#0256AA;
+}
+
+/* 버튼 스타일 */
+.btn-register {
+	
+    background-color: #0256AA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin: 60px 0 20px;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+/* 테이블 스타일 */
+.board {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board th, .board td {
+    padding: 12px;
+    text-align: left;
+}
+
+.board th {
+    background-color: #333;
+    color: #fff;
+}
+
+.board td {
+    background-color: #fff;
+    color: #333;
+}
+
+.board tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+.board a {
+    color: #0256AA;
+    text-decoration: none;
+}
+
+.board a:hover {
+    text-decoration: underline;
+}
+
+/* 수정/삭제 버튼 스타일 */
+.btn-edit, .btn-delete {
+    background-color: #0256AA;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* 페이징 스타일 */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #0256AA;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: #0256AA;
+    color: #fff;
+    border: none;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
